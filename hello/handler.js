@@ -3,7 +3,7 @@
 module.exports = (event, context) => {
     let err;
     const result =             {
-        status: "You said: " + JSON.stringify(event.body)
+        status: (event.body != "{}" )? "You said: " + JSON.stringify(event.body) : "Hello OpenFaaS"
     };
 
     context
