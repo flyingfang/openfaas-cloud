@@ -22,13 +22,3 @@ functions:
       com.openfaas.scale.max: 10
       com.openfaas.scale.factor: 50
 
-version: 1.0
-provider:
-  name: openfaas
-  gateway: http://gateway.myfaas.flyingfang.com
-functions:
-  afterburn-test:
-    lang: go-afterburn
-    handler: ./afterburn-test
-    image: xflying/afterburn-test:latest
-
